@@ -1,0 +1,36 @@
+{
+    "Type": "Live2D Expression",
+    "IsModelCustomizationExpression": false,
+    "Parameters": [
+        {
+            "Id": "ParamEyeLSmile",
+            "Value": 0.4000000059604645,
+            "Blend": "Overwrite"
+        },
+        {
+            "Id": "ParamEyeRSmile",
+            "Value": 0.4000000059604645,
+            "Blend": "Overwrite"
+        },
+        {
+            "Id": "ParamMouthForm",
+            "Value": 0.0,
+            "Blend": "Overwrite"
+        },
+        {
+            "Id": "ParamArmLA",
+            "Value": -3.0,
+            "Blend": "Overwrite"
+        },
+        {
+            "Id": "ParamElbowL",
+            "Value": 0.699999988079071,
+            "Blend": "Overwrite"
+        },
+        {
+            "Id": "ParamWristL",
+            "Value": 0.6000000238418579,
+            "Blend": "Overwrite"
+        }
+    ]
+}

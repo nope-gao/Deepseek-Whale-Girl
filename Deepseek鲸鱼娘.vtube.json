@@ -1,0 +1,821 @@
+{
+  "Version": 1,
+  "Name": "Deepseek鲸鱼娘",
+  "ModelID": "fb431ef5ed7f46539f0b1ed35a94d2d3",
+  "FileReferences": {
+    "Icon": "icon.png",
+    "Model": "Deepseek鲸鱼娘.model3.json",
+    "IdleAnimation": "ears_idle.motion3.json",
+    "IdleAnimationWhenTrackingLost": ""
+  },
+  "SavedModelPosition": {
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "Rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "Scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "ModelPositionMovement": {
+    "Use": false,
+    "X": 6,
+    "Y": 8,
+    "Z": 11,
+    "SmoothingX": 10,
+    "SmoothingY": 10,
+    "SmoothingZ": 10
+  },
+  "ItemSettings": {
+    "OnlyMoveWhenPinned": false,
+    "AllowNormalHotkeyTriggers": true,
+    "Multiplier_HeadAngleX": 1.0,
+    "Multiplier_HeadAngleY": 1.0,
+    "Multiplier_HeadAngleZ": 1.0,
+    "Shift_HeadAngleX": 0.0,
+    "Shift_HeadAngleY": 0.0,
+    "Smoothing_HeadAngleX": 15.0,
+    "Smoothing_HeadAngleY": 15.0,
+    "Smoothing_HeadAngleZ": 15.0
+  },
+  "PhysicsSettings": {
+    "Use": true,
+    "UseLegacyPhysics": false,
+    "Live2DPhysicsFPS": 1,
+    "PhysicsStrength": 100,
+    "WindStrength": 0,
+    "DraggingPhysicsStrength": 0
+  },
+  "GeneralSettings": {
+    "ModelVolume": 90,
+    "TimeUntilTrackingLostIdleAnimation": 0.0,
+    "WorkshopSharingForbidden": true,
+    "EnableExpressionSaving": true
+  },
+  "ParameterSettings": [
+    {
+      "Folder": "",
+      "Name": "Face Left/Right Rotation",
+      "Input": "FaceAngleX",
+      "InputRangeLower": -30.0,
+      "InputRangeUpper": 30.0,
+      "OutputRangeLower": -30.0,
+      "OutputRangeUpper": 30.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamAngleX",
+      "Smoothing": 15,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Face Up/Down Rotation",
+      "Input": "FaceAngleY",
+      "InputRangeLower": -15.0,
+      "InputRangeUpper": 15.0,
+      "OutputRangeLower": -30.0,
+      "OutputRangeUpper": 30.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamAngleY",
+      "Smoothing": 14,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Face Lean Rotation",
+      "Input": "FaceAngleZ",
+      "InputRangeLower": -30.0,
+      "InputRangeUpper": 30.0,
+      "OutputRangeLower": -30.0,
+      "OutputRangeUpper": 30.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamAngleZ",
+      "Smoothing": 14,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye Open Right",
+      "Input": "EyeOpenLeft",
+      "InputRangeLower": 0.05000000074505806,
+      "InputRangeUpper": 0.550000011920929,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 1.2000000476837158,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeLOpen",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye Open Left",
+      "Input": "EyeOpenRight",
+      "InputRangeLower": 0.05000000074505806,
+      "InputRangeUpper": 0.550000011920929,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 1.2000000476837158,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeROpen",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye X",
+      "Input": "EyeRightX",
+      "InputRangeLower": -1.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": 1.0,
+      "OutputRangeUpper": -1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeBallX",
+      "Smoothing": 8,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye Y",
+      "Input": "EyeRightY",
+      "InputRangeLower": -1.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeBallY",
+      "Smoothing": 8,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Brow Height Left",
+      "Input": "BrowLeftY",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 0.75,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamBrowLY",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Brow Height Right",
+      "Input": "BrowRightY",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 0.75,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamBrowRY",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Brow Form Left",
+      "Input": "BrowLeftY",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamBrowLForm",
+      "Smoothing": 15,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Brow Form Right",
+      "Input": "BrowRightY",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamBrowRForm",
+      "Smoothing": 15,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Mouth Smile",
+      "Input": "MouthSmile",
+      "InputRangeLower": 0.3499999940395355,
+      "InputRangeUpper": 0.800000011920929,
+      "OutputRangeLower": -1.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamMouthForm",
+      "Smoothing": 3,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Mouth Open",
+      "Input": "MouthOpen",
+      "InputRangeLower": 0.029999999329447746,
+      "InputRangeUpper": 0.3499999940395355,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamMouthOpenY",
+      "Smoothing": 5,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye Smile Left",
+      "Input": "MouthSmile",
+      "InputRangeLower": 0.5,
+      "InputRangeUpper": 0.800000011920929,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 0.15000000596046448,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeLSmile",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "Eye Smile Right",
+      "Input": "MouthSmile",
+      "InputRangeLower": 0.5,
+      "InputRangeUpper": 0.800000011920929,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 0.15000000596046448,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "ParamEyeRSmile",
+      "Smoothing": 10,
+      "Minimized": false
+    },
+    {
+      "Folder": "",
+      "Name": "呼吸",
+      "Input": "",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": true,
+      "OutputLive2D": "ParamBreath",
+      "Smoothing": 0,
+      "Minimized": true
+    },
+    {
+      "Folder": "",
+      "Name": "胸腰相对形变 呼吸",
+      "Input": "",
+      "InputRangeLower": 0.0,
+      "InputRangeUpper": 1.0,
+      "OutputRangeLower": 0.0,
+      "OutputRangeUpper": 1.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": true,
+      "OutputLive2D": "Fusion_ParamBreath",
+      "Smoothing": 0,
+      "Minimized": true
+    },
+    {
+      "Folder": "",
+      "Name": "胸腰相对形变 ",
+      "Input": "FaceAngleX",
+      "InputRangeLower": -30.0,
+      "InputRangeUpper": 30.0,
+      "OutputRangeLower": 10.0,
+      "OutputRangeUpper": -10.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "Fusion_ParamBodyAngleXinput",
+      "Smoothing": 18,
+      "Minimized": true
+    },
+    {
+      "Folder": "",
+      "Name": "胸腰相对形变 ",
+      "Input": "FaceAngleY",
+      "InputRangeLower": -20.0,
+      "InputRangeUpper": 15.0,
+      "OutputRangeLower": -10.0,
+      "OutputRangeUpper": 10.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "Fusion_ParamBodyAngleY3input",
+      "Smoothing": 20,
+      "Minimized": true
+    },
+    {
+      "Folder": "",
+      "Name": "胸腰相对形变 ",
+      "Input": "FaceAngleZ",
+      "InputRangeLower": -40.0,
+      "InputRangeUpper": 40.0,
+      "OutputRangeLower": -10.0,
+      "OutputRangeUpper": 10.0,
+      "ClampInput": true,
+      "ClampOutput": true,
+      "UseBlinking": false,
+      "UseBreathing": false,
+      "OutputLive2D": "Fusion_ParamBodyAngleZ2input",
+      "Smoothing": 8,
+      "Minimized": true
+    }
+  ],
+  "Hotkeys": [
+    {
+      "HotkeyID": "0399b6d7721c4ed480d78c7e871f7ed8",
+      "Name": "微笑嘴形",
+      "Action": "ToggleExpression",
+      "File": "mouth_smile.exp3.json",
+      "Folder": "",
+      "AutoCreated": false,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "Rotation": 0.0
+      },
+      "ColorOverlay": {
+        "On": false,
+        "IsStaticColor": false,
+        "Display": -1,
+        "WindowName": "",
+        "IncludeLeft": false,
+        "IncludeMid": false,
+        "IncludeRight": false,
+        "BaseValue": 0,
+        "OverlayValue": 0,
+        "Smoothing": 0,
+        "IncludeItems": false,
+        "StaticColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "ColorScreenMultiplyPreset": {
+        "ArtMeshMultiplyAndScreenColors": []
+      },
+      "HandGestureSettings": {
+        "GestureLeft": "",
+        "GestureRight": "",
+        "GestureCombinator": "AND",
+        "AllowMirroredGesture": false,
+        "DeactivateExpWhenGestureNotDetected": false,
+        "SecondsUntilDetection": 0.5,
+        "SecondsDetected": 0.0,
+        "PercentDetected": 0.0
+      },
+      "LoadModelSettings": {
+        "LoadAtCurrentPosition": true
+      },
+      "TwitchTriggers": {
+        "Active": false,
+        "CooldownActive": false,
+        "CooldownSeconds": 30.0,
+        "ResetActive": false,
+        "HideModelResetDialog": false,
+        "Active_GiftSubTrigger": false,
+        "Active_BitTrigger": false,
+        "Active_RedeemTrigger": false,
+        "Active_PowerUpTrigger": false,
+        "Active_TextCommandTrigger": false,
+        "Active_SubTrigger": false,
+        "Active_FollowTrigger": false,
+        "Active_RaidTrigger": false,
+        "Active_ShoutoutTrigger": false,
+        "Active_AdbreakTrigger": false,
+        "Trigger_TextCommandTrigger": "",
+        "Trigger_Redeem_Name": "",
+        "Trigger_Redeem_ID": "",
+        "Trigger_PowerUp_Name": "",
+        "Trigger_PowerUp_ID": "",
+        "UseTextTriggerUserTypeRestriction": false,
+        "RestrictTextTriggerTo": {
+          "Allowed_You": true,
+          "Allowed_Subs": false,
+          "Allowed_Mods": false,
+          "Allowed_VIPs": false,
+          "Allowed_Artists": false,
+          "Allowed_UserNames": false,
+          "UserNames": [],
+          "Allowed_UserIDs": false,
+          "UserIDs": []
+        },
+        "AllowRepeatedFollow": false,
+        "Trigger_GiftSubTrigger": {
+          "Min": 1.0,
+          "Max": 100.0
+        },
+        "Trigger_BitTrigger": {
+          "Min": 100.0,
+          "Max": 3000.0
+        }
+      },
+      "Triggers": {
+        "Trigger1": "LeftControl",
+        "Trigger2": "Alt",
+        "Trigger3": "N7",
+        "ScreenButton": -1
+      },
+      "SoundConfig": {
+        "SoundActive": false,
+        "StopWhenInactive": false,
+        "StopFadeOutSeconds": 2.0,
+        "SoundSlots": []
+      },
+      "IsGlobal": false,
+      "IsActive": true,
+      "Minimized": false,
+      "StopsOnLastFrame": false,
+      "DeactivateAfterKeyUp": false,
+      "OnlyLoadOneRandomItem": false,
+      "DeactivateAfterSeconds": false,
+      "DeactivateAfterSecondsAmount": 10.0,
+      "FadeSecondsAmount": 0.20000000298023224,
+      "OnScreenHotkeyColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "HotkeyID": "d63879a7979b43ec9ceafe47a0db9784",
+      "Name": "圆口嘴形",
+      "Action": "ToggleExpression",
+      "File": "mouth_round.exp3.json",
+      "Folder": "",
+      "AutoCreated": false,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "Rotation": 0.0
+      },
+      "ColorOverlay": {
+        "On": false,
+        "IsStaticColor": false,
+        "Display": -1,
+        "WindowName": "",
+        "IncludeLeft": false,
+        "IncludeMid": false,
+        "IncludeRight": false,
+        "BaseValue": 0,
+        "OverlayValue": 0,
+        "Smoothing": 0,
+        "IncludeItems": false,
+        "StaticColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "ColorScreenMultiplyPreset": {
+        "ArtMeshMultiplyAndScreenColors": []
+      },
+      "HandGestureSettings": {
+        "GestureLeft": "",
+        "GestureRight": "",
+        "GestureCombinator": "AND",
+        "AllowMirroredGesture": false,
+        "DeactivateExpWhenGestureNotDetected": false,
+        "SecondsUntilDetection": 0.5,
+        "SecondsDetected": 0.0,
+        "PercentDetected": 0.0
+      },
+      "LoadModelSettings": {
+        "LoadAtCurrentPosition": true
+      },
+      "TwitchTriggers": {
+        "Active": false,
+        "CooldownActive": false,
+        "CooldownSeconds": 30.0,
+        "ResetActive": false,
+        "HideModelResetDialog": false,
+        "Active_GiftSubTrigger": false,
+        "Active_BitTrigger": false,
+        "Active_RedeemTrigger": false,
+        "Active_PowerUpTrigger": false,
+        "Active_TextCommandTrigger": false,
+        "Active_SubTrigger": false,
+        "Active_FollowTrigger": false,
+        "Active_RaidTrigger": false,
+        "Active_ShoutoutTrigger": false,
+        "Active_AdbreakTrigger": false,
+        "Trigger_TextCommandTrigger": "",
+        "Trigger_Redeem_Name": "",
+        "Trigger_Redeem_ID": "",
+        "Trigger_PowerUp_Name": "",
+        "Trigger_PowerUp_ID": "",
+        "UseTextTriggerUserTypeRestriction": false,
+        "RestrictTextTriggerTo": {
+          "Allowed_You": true,
+          "Allowed_Subs": false,
+          "Allowed_Mods": false,
+          "Allowed_VIPs": false,
+          "Allowed_Artists": false,
+          "Allowed_UserNames": false,
+          "UserNames": [],
+          "Allowed_UserIDs": false,
+          "UserIDs": []
+        },
+        "AllowRepeatedFollow": false,
+        "Trigger_GiftSubTrigger": {
+          "Min": 1.0,
+          "Max": 100.0
+        },
+        "Trigger_BitTrigger": {
+          "Min": 100.0,
+          "Max": 3000.0
+        }
+      },
+      "Triggers": {
+        "Trigger1": "LeftControl",
+        "Trigger2": "Alt",
+        "Trigger3": "N8",
+        "ScreenButton": -1
+      },
+      "SoundConfig": {
+        "SoundActive": false,
+        "StopWhenInactive": false,
+        "StopFadeOutSeconds": 2.0,
+        "SoundSlots": []
+      },
+      "IsGlobal": false,
+      "IsActive": true,
+      "Minimized": false,
+      "StopsOnLastFrame": false,
+      "DeactivateAfterKeyUp": false,
+      "OnlyLoadOneRandomItem": false,
+      "DeactivateAfterSeconds": false,
+      "DeactivateAfterSecondsAmount": 10.0,
+      "FadeSecondsAmount": 0.20000000298023224,
+      "OnScreenHotkeyColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "HotkeyID": "21d3bbbdde1043aa88f39ad2ba805951",
+      "Name": "恢复追踪嘴形",
+      "Action": "RemoveAllExpressions",
+      "File": "",
+      "Folder": "",
+      "AutoCreated": false,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "Rotation": 0.0
+      },
+      "ColorOverlay": {
+        "On": false,
+        "IsStaticColor": false,
+        "Display": -1,
+        "WindowName": "",
+        "IncludeLeft": false,
+        "IncludeMid": false,
+        "IncludeRight": false,
+        "BaseValue": 0,
+        "OverlayValue": 0,
+        "Smoothing": 0,
+        "IncludeItems": false,
+        "StaticColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "ColorScreenMultiplyPreset": {
+        "ArtMeshMultiplyAndScreenColors": []
+      },
+      "HandGestureSettings": {
+        "GestureLeft": "",
+        "GestureRight": "",
+        "GestureCombinator": "AND",
+        "AllowMirroredGesture": false,
+        "DeactivateExpWhenGestureNotDetected": false,
+        "SecondsUntilDetection": 0.5,
+        "SecondsDetected": 0.0,
+        "PercentDetected": 0.0
+      },
+      "LoadModelSettings": {
+        "LoadAtCurrentPosition": true
+      },
+      "TwitchTriggers": {
+        "Active": false,
+        "CooldownActive": false,
+        "CooldownSeconds": 30.0,
+        "ResetActive": false,
+        "HideModelResetDialog": false,
+        "Active_GiftSubTrigger": false,
+        "Active_BitTrigger": false,
+        "Active_RedeemTrigger": false,
+        "Active_PowerUpTrigger": false,
+        "Active_TextCommandTrigger": false,
+        "Active_SubTrigger": false,
+        "Active_FollowTrigger": false,
+        "Active_RaidTrigger": false,
+        "Active_ShoutoutTrigger": false,
+        "Active_AdbreakTrigger": false,
+        "Trigger_TextCommandTrigger": "",
+        "Trigger_Redeem_Name": "",
+        "Trigger_Redeem_ID": "",
+        "Trigger_PowerUp_Name": "",
+        "Trigger_PowerUp_ID": "",
+        "UseTextTriggerUserTypeRestriction": false,
+        "RestrictTextTriggerTo": {
+          "Allowed_You": true,
+          "Allowed_Subs": false,
+          "Allowed_Mods": false,
+          "Allowed_VIPs": false,
+          "Allowed_Artists": false,
+          "Allowed_UserNames": false,
+          "UserNames": [],
+          "Allowed_UserIDs": false,
+          "UserIDs": []
+        },
+        "AllowRepeatedFollow": false,
+        "Trigger_GiftSubTrigger": {
+          "Min": 1.0,
+          "Max": 100.0
+        },
+        "Trigger_BitTrigger": {
+          "Min": 100.0,
+          "Max": 3000.0
+        }
+      },
+      "Triggers": {
+        "Trigger1": "LeftControl",
+        "Trigger2": "Alt",
+        "Trigger3": "N9",
+        "ScreenButton": -1
+      },
+      "SoundConfig": {
+        "SoundActive": false,
+        "StopWhenInactive": false,
+        "StopFadeOutSeconds": 2.0,
+        "SoundSlots": []
+      },
+      "IsGlobal": false,
+      "IsActive": true,
+      "Minimized": false,
+      "StopsOnLastFrame": false,
+      "DeactivateAfterKeyUp": false,
+      "OnlyLoadOneRandomItem": false,
+      "DeactivateAfterSeconds": false,
+      "DeactivateAfterSecondsAmount": 10.0,
+      "FadeSecondsAmount": 0.4000000059604645,
+      "OnScreenHotkeyColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    }
+  ],
+  "HotkeySettings": {
+    "UseOnScreenHotkeys": false,
+    "UseKeyboardHotkeys": true,
+    "SendOnScreenHotkeysToPC": true,
+    "OnScreenHotkeyAlpha": 75
+  },
+  "ArtMeshDetails": {
+    "ArtMeshesExcludedFromPinning": [],
+    "ArtMeshesThatDeleteItemsOnDrop": [],
+    "ArtMeshSceneLightingMultipliers": [],
+    "ArtMeshMultiplyAndScreenColors": [],
+    "ModelArtMeshGroups": []
+  },
+  "ParameterCustomization": {
+    "ParametersExcludedFromVNetSmoothing": [],
+    "SoundTriggers": []
+  },
+  "PhysicsCustomizationSettings": {
+    "PhysicsMultipliersPerPhysicsGroup": [
+      {
+        "ID": "Fusion_PhysicsSetting1",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting2",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting3",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting4",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting5",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting6",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting7",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting8",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting9",
+        "Value": 0.25
+      },
+      {
+        "ID": "Fusion_PhysicsSetting10",
+        "Value": 0.25
+      }
+    ],
+    "WindMultipliersPerPhysicsGroup": [],
+    "DraggingPhysicsMultipliersPerPhysicsGroup": []
+  },
+  "FolderInfo": {
+    "HotkeyFolders": [],
+    "ConfigItemFolders": []
+  },
+  "UserCustomization": {
+    "PreferredLanguageSetBy": "",
+    "PreferredLanguage": "<LanguageSelectionID_Default>",
+    "AvailableLanguages": [],
+    "UserParamFolderInfo": [],
+    "UserParamInfo": []
+  },
+  "SavedActiveExpressions": [],
+  "ModelFolder": "<VTS_MODEL_BASE_PATH_PLACEHOLDER>"
+}

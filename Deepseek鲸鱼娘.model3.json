@@ -1,0 +1,89 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "Deepseek鲸鱼娘.moc3",
+    "Textures": [
+      "textures/texture_0.png",
+      "textures/texture_1.png",
+      "textures/texture_2.png",
+      "textures/transparent.png",
+      "textures/texture_4.png",
+      "textures/transparent.png",
+      "textures/texture_6.png",
+      "textures/texture_7.png",
+      "textures/texture_8.png",
+      "textures/transparent.png",
+      "textures/transparent.png",
+      "textures/texture_11.png",
+      "textures/texture_12.png"
+    ],
+    "Physics": "Deepseek鲸鱼娘.physics3.json",
+    "Pose": "Deepseek鲸鱼娘.pose3.json",
+    "DisplayInfo": "Deepseek鲸鱼娘.cdi3.json",
+    "Motions": {
+      "WhaleActions": [
+        {
+          "File": "motions/whale/wave.motion3.json",
+          "FadeInTime": 0.3,
+          "FadeOutTime": 0.35
+        }
+      ],
+      "Idle": [
+        {
+          "File": "motions/whale/ears_idle.motion3.json",
+          "FadeInTime": 0.3,
+          "FadeOutTime": 0.5
+        }
+      ]
+    },
+    "Expressions": [
+      {
+        "Name": "微笑",
+        "File": "expressions/expression_0.exp3.json"
+      },
+      {
+        "Name": "惊讶",
+        "File": "expressions/expression_1.exp3.json"
+      },
+      {
+        "Name": "认真",
+        "File": "expressions/expression_2.exp3.json"
+      },
+      {
+        "Name": "招手",
+        "File": "expressions/expression_3.exp3.json"
+      },
+      {
+        "Name": "微笑嘴形",
+        "File": "mouth_smile.exp3.json"
+      },
+      {
+        "Name": "圆口嘴形",
+        "File": "mouth_round.exp3.json"
+      }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Id": "HitArea",
+      "Name": "Body"
+    }
+  ]
+}
